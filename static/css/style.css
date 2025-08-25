@@ -1,0 +1,139 @@
+/* HealthMate Custom Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.health-stat {
+    text-align: center;
+    padding: 1rem;
+}
+
+.health-stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.health-stat-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.progress {
+    height: 1.5rem;
+}
+
+.btn-health {
+    background-color: #198754;
+    border-color: #198754;
+    color: white;
+}
+
+.btn-health:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+    color: white;
+}
+
+.measurement-card {
+    transition: transform 0.2s;
+}
+
+.measurement-card:hover {
+    transform: translateY(-5px);
+}
+
+.bmi-indicator {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.bmi-underweight {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.bmi-normal {
+    background-color: #198754;
+    color: #fff;
+}
+
+.bmi-overweight {
+    background-color: #fd7e14;
+    color: #000;
+}
+
+.bmi-obese {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Custom form styles */
+.form-control:focus,
+.form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .health-stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for alerts */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom table styles */
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+/* Goal progress styles */
+.goal-progress {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.goal-card {
+    transition: all 0.3s ease;
+}
+
+.goal-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
