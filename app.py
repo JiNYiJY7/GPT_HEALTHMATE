@@ -293,13 +293,13 @@ init_db()
 
 # Page configuration
 st.set_page_config(
-    page_title="GPT-HealthMate Health Assistant",
+    page_title="GPT-HealthMate",
     page_icon="🩺",
     layout="centered"
 )
 
 # Application title
-st.title("🩺 GPT-HealthMate Health Assistant")
+st.title("🩺 GPT-HealthMate")
 
 # Initialize session state
 if "user" not in st.session_state:
